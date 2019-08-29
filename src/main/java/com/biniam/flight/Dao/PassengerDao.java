@@ -4,11 +4,13 @@ package com.biniam.flight.Dao;
 import com.biniam.flight.Domain.Flight;
 import com.biniam.flight.Domain.Passenger;
 
+import java.util.List;
+
 public interface PassengerDao {
 
-    //void insertPassenger(Passenger passenger);
-    void bookFlight(Flight flight);
+
+    List<Flight> searchFlightByOriginAndDestination();
+    void bookFlight(Passenger passenger ,Flight flight);
     void cancelBook(Flight flight);
-    void pay(Flight flight);
     //List<Flight> listUnBookedFlight(User user)
 }
