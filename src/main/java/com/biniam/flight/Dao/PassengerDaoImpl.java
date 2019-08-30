@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class PassengerDaoImpl implements PassengerDao {
-    private Map<String,Passenger> passengers = new HashMap<>();
+    private Map<String, Passenger> passengers = new HashMap<>();
 
 
     @Override

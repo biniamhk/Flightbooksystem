@@ -34,4 +34,9 @@ public class FlightDaoImpl implements FlightDao {
                 .stream()
                 .filter(flightDate -> flightDate.getDate().equalsIgnoreCase(date)).collect(Collectors.toSet());
     }
+
+    public Collection<Flight> readAllFlights(){
+        return flights.values();
+    }
+
 }

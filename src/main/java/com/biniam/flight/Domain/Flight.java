@@ -8,8 +8,8 @@ public class Flight {
     private String destination;
     private Float businessClassPrice;
     private Float economyClassPrice;
-   // private Airplane airplane;
-   private String departureTime;
+    // private Airplane airplane;
+    private String departureTime;
     private String arrivalTime;
     private String date;
 
@@ -17,15 +17,15 @@ public class Flight {
     }
 
     private Flight(Builder builder) {
-        this.flightNo=builder.flightNo;
-        this.origin=Objects.requireNonNull(builder.origin,"originPlace");
-        this.destination=Objects.requireNonNull(builder.destination,"destinationPlace");
-        this.businessClassPrice=Objects.requireNonNull(builder.businessClassPrice,"businessClassPrice");
-        this.economyClassPrice=Objects.requireNonNull(builder.economyClassPrice,"businessClassPrice");
-       // this.airplane=Objects.requireNonNull(builder.airplane,"airplane");
-        this.departureTime=Objects.requireNonNull(builder.departureTime,"plane departure time");
-        this.arrivalTime=Objects.requireNonNull(builder.arrivalTime,"arrivalTime");
-        this.date=Objects.requireNonNull(builder.date,"dateOfFlight");
+        this.flightNo = builder.flightNo;
+        this.origin = Objects.requireNonNull(builder.origin, "originPlace");
+        this.destination = Objects.requireNonNull(builder.destination, "destinationPlace");
+        this.businessClassPrice = Objects.requireNonNull(builder.businessClassPrice, "businessClassPrice");
+        this.economyClassPrice = Objects.requireNonNull(builder.economyClassPrice, "businessClassPrice");
+        // this.airplane=Objects.requireNonNull(builder.airplane,"airplane");
+        this.departureTime = Objects.requireNonNull(builder.departureTime, "plane departure time");
+        this.arrivalTime = Objects.requireNonNull(builder.arrivalTime, "arrivalTime");
+        this.date = Objects.requireNonNull(builder.date, "dateOfFlight");
     }
 
 
@@ -44,17 +44,19 @@ public class Flight {
     public Float getBusinessClassPrice() {
         return businessClassPrice;
     }
+
     public Float getEconomyClassPrice() {
         return economyClassPrice;
     }
 
     //public Airplane getAirplane() {
-   //     return airplane;
+    //     return airplane;
     //}
 
-    public String getDepartureTime(){
+    public String getDepartureTime() {
         return departureTime;
     }
+
     public String getArrivalTime() {
         return arrivalTime;
     }
@@ -63,13 +65,8 @@ public class Flight {
         return date;
     }
 
-    public static Builder builder() {
-        return new Builder();
-
-    }
-
     @Override
-    public  String toString() {
+    public String toString() {
         return "Flight{" +
                 "flightNo='" + flightNo + '\'' +
                 ", origin='" + origin + '\'' +
@@ -80,6 +77,11 @@ public class Flight {
                 ", arrivalTime='" + arrivalTime + '\'' +
                 ", date='" + date + '\'' +
                 '}';
+    }
+
+    public static Builder builder() {
+        return new Builder();
+
     }
 
     public static class Builder {
@@ -115,9 +117,10 @@ public class Flight {
             this.businessClassPrice = businessClassPrice;
             return this;
         }
-        public Builder withEconomyClassPrice(float economyClassPrice){
-            this.economyClassPrice=economyClassPrice;
-            return  this;
+
+        public Builder withEconomyClassPrice(float economyClassPrice) {
+            this.economyClassPrice = economyClassPrice;
+            return this;
         }
 
 //        public Builder withAirplane(FlightClass airplane) {

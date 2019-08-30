@@ -7,6 +7,8 @@ import java.util.Optional;
 
 public interface AirplaneDao {
     void createPlane(Airplane airplane);
+
     Optional<Airplane> read(String planeNo);
+
     Collection<Airplane> readAllAirplaneByModel(String model);
 }

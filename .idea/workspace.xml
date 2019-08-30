@@ -2,30 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec19d0ef-4b0c-491d-8030-f3758fcda95f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/AirplaneDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/AirplaneDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/FlightClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Seat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/client/FlightAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/AirplaneDaoUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/AirplaneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/AirplaneDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/FlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/FlightDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/FlightDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/FlightDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/PassengerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/PassengerDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/PassengerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/PassengerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FlightDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/FlightDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/FlightDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/FlightDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/FlightDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Flight$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Flight$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Passenger$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Passenger$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Seat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/FlightManager.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/FlightDaoUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/FlightDaoUnitTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Flightbooksystem" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,7 +59,7 @@
   <component name="ProjectId" id="1Q079NDsFC6ki44OW5zEvFk8bLb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reference (flight)" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/planebooking/PlaneBookingSystem" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -67,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AirplaneDaoUnitTest">
+  <component name="RunManager" selected="JUnit.FlightDaoUnitTest.testReadAllFlightsByDate">
     <configuration name="AirplaneDaoUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
@@ -83,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AirplaneDaoUnitTest.testReadAirplanesByModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BusinessClassFoodUnitTest.testAllfoodsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
@@ -92,14 +102,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.AirplaneDaoUnitTest" />
-      <option name="METHOD_NAME" value="testReadAirplanesByModel" />
+      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.BusinessClassFoodUnitTest" />
+      <option name="METHOD_NAME" value="testAllfoodsAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightDaoUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BusinessClassFoodUnitTest.testCreatingBusinessFood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
@@ -108,23 +118,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.FlightDaoUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlightDaoUnitTest.testCreateFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FlightManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.biniam.flight.daoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.FlightDaoUnitTest" />
-      <option name="METHOD_NAME" value="testCreateFlight" />
+      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.BusinessClassFoodUnitTest" />
+      <option name="METHOD_NAME" value="testCreatingBusinessFood" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,13 +141,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoUnitTest.testReadingAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.biniam.flight.daoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.UserDaoUnitTest" />
+      <option name="METHOD_NAME" value="testReadingAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AirplaneDaoUnitTest" />
-        <item itemvalue="JUnit.FlightDaoUnitTest" />
         <item itemvalue="JUnit.FlightDaoUnitTest.testReadAllFlightsByDate" />
-        <item itemvalue="JUnit.FlightDaoUnitTest.testCreateFlight" />
-        <item itemvalue="JUnit.AirplaneDaoUnitTest.testReadAirplanesByModel" />
+        <item itemvalue="JUnit.AirplaneDaoUnitTest" />
+        <item itemvalue="JUnit.BusinessClassFoodUnitTest.testAllfoodsAvailable" />
+        <item itemvalue="JUnit.BusinessClassFoodUnitTest.testCreatingBusinessFood" />
+        <item itemvalue="JUnit.UserDaoUnitTest.testReadingAllUsers" />
       </list>
     </recent_temporary>
   </component>

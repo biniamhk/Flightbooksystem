@@ -7,7 +7,11 @@ import java.util.Optional;
 
 public interface FlightDao {
     void createFlight(Flight flight);
+
     Optional<Flight> read(String flightNo);
+
     Collection<Flight> readAllFlightsByDate(String date);
+
+    Collection<Flight> readAllFlights();
 
 }

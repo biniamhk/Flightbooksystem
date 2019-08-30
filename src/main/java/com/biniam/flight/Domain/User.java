@@ -10,10 +10,10 @@ public class User {
     private User() {
     }
 
-    public User(Builder builder) {
+    private User(Builder builder) {
         this.username = Objects.requireNonNull(builder.userName, "user name");
         this.password = Objects.requireNonNull(builder.password, "user password");
-        this.userId=Objects.requireNonNull(builder.userId,"userId");
+        this.userId = Objects.requireNonNull(builder.userId, "userId");
     }
 
     public String getUsername() {
@@ -46,8 +46,9 @@ public class User {
             this.password = password;
             return this;
         }
-        public Builder withUserId(String userId){
-            this.userId=userId;
+
+        public Builder withUserId(String userId) {
+            this.userId = userId;
             return this;
         }
 

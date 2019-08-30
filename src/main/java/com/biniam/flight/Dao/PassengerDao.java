@@ -10,7 +10,9 @@ public interface PassengerDao {
 
 
     List<Flight> searchFlightByOriginAndDestination();
-    void bookFlight(Passenger passenger ,Flight flight);
+
+    void bookFlight(Passenger passenger, Flight flight);
+
     void cancelBook(Flight flight);
     //List<Flight> listUnBookedFlight(User user)
 }
