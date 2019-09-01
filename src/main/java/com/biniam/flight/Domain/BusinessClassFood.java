@@ -1,8 +1,9 @@
 package com.biniam.flight.Domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class BusinessClassFood {
+public class BusinessClassFood implements Serializable {
     private String foodName;
     private String foodQty;
     private float foodPrice;
@@ -33,6 +34,16 @@ public class BusinessClassFood {
 
     public String getDrink() {
         return drink;
+    }
+
+    @Override
+    public String toString() {
+        return "BusinessClassFood{" +
+                "foodName='" + foodName + '\'' +
+                ", foodQty='" + foodQty + '\'' +
+                ", foodPrice=" + foodPrice +
+                ", drink='" + drink + '\'' +
+                '}';
     }
 
     public static Builder builder() {

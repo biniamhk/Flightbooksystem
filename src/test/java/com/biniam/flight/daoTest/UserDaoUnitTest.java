@@ -6,6 +6,8 @@ import com.biniam.flight.Domain.User;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Collection;
+
 
 public class UserDaoUnitTest {
 
@@ -23,6 +25,8 @@ public class UserDaoUnitTest {
         userDao.createUser(User.builder().withUserId("12").withUserName("noah").withPassword("12").build());
         userDao.createUser(User.builder().withUserId("13").withUserName("mary").withPassword("13").build());
         Assert.assertEquals(3, userDao.readAllUser().size());
+        Collection<User> users=userDao.readAllUser();
+        System.out.println(users);
 
     }
 }

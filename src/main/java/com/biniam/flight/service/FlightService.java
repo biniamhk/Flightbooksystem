@@ -7,6 +7,10 @@ import java.util.Collections;
 import java.util.List;
 
 public interface FlightService {
+    void createFlight(Flight flight);
+    Collection<Flight> getAllFlight();
+    Collection<Flight> getFlightByDate(String date);
+    Collection<Flight> getFlightByOrigin(String origin);
+    Collection<Flight> getFlightByDestination(String destination);
 
-    Collection<Flight> getFlight();
 }

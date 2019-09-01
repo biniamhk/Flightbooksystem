@@ -1,14 +1,15 @@
 package com.biniam.flight.Domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class EconomyClassFood {
+public class EconomyClassFood implements Serializable {
     private String foodName;
     private String foodQty;
     private String drink;
     private float foodPrice;
 
-    private EconomyClassFood() {
+    private EconomyClassFood()  {
 
     }
 
@@ -35,7 +36,17 @@ public class EconomyClassFood {
         return foodPrice;
     }
 
-    public static Builder build() {
+    @Override
+    public String toString() {
+        return "EconomyClassFood{" +
+                "foodName='" + foodName + '\'' +
+                ", foodQty='" + foodQty + '\'' +
+                ", drink='" + drink + '\'' +
+                ", foodPrice=" + foodPrice +
+                '}';
+    }
+
+    public static Builder builder() {
         return new Builder();
     }
 

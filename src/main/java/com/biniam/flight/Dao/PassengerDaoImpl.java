@@ -3,27 +3,28 @@ package com.biniam.flight.Dao;
 import com.biniam.flight.Domain.Flight;
 import com.biniam.flight.Domain.Passenger;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PassengerDaoImpl implements PassengerDao {
     private Map<String, Passenger> passengers = new HashMap<>();
 
 
     @Override
-    public List<Flight> searchFlightByOriginAndDestination() {
-        return null;
+    public void createPassenger(Passenger passenger) {
+        if(passengers.containsKey(passenger.getPassengerId())){
+            throw new RuntimeException("passenger already exist");
+        }
+        passengers.put(passenger.getPassengerId(),passenger);
+
     }
 
     @Override
-    public void bookFlight(Passenger passenger, Flight flight) {
-
+    public Optional<Passenger> read(String passengerId) {
+        return Optional.ofNullable(passengers.get(passengerId));
     }
 
     @Override
-    public void cancelBook(Flight flight) {
-
+    public Collection<Passenger> readAllPassengers() {
+        return passengers.values();
     }
 }
-

@@ -25,17 +25,34 @@ public class FlightDaoUnitTest {
     public void testReadAllFlightsByDate() {
         FlightDao flightDao = new FlightDaoImpl();
         flightDao.createFlight(Flight.builder().withFlightNo("1111").withOrigin("Stockholm").withDestination("Paris")
-                .withBusinessClassPrice(10000f).withEconomyClassPrice(5000f).withDepartureTime("16:00")
+                .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("16:00")
                 .withArrivalTime("20:00").withDate("20-11-2019").build());
         flightDao.createFlight(Flight.builder().withFlightNo("1234").withOrigin("Stockholm").withDestination("Berlin")
-                .withBusinessClassPrice(8000f).withEconomyClassPrice(4000f).withDepartureTime("18:00")
+                .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("18:00")
                 .withArrivalTime("20:00").withDate("20-11-2019").build());
         flightDao.createFlight(Flight.builder().withFlightNo("3333").withOrigin("Helsink").withDestination("Stockholm")
-                .withBusinessClassPrice(6000f).withEconomyClassPrice(2000f).withDepartureTime("13:00")
+                .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("13:00")
                 .withArrivalTime("12:00").withDate("15-09-2019").build());
         Assert.assertEquals(2, flightDao.readAllFlightsByDate("20-11-2019").size());
         Collection<Flight> flights = flightDao.readAllFlights();
 
         System.out.println(flights);
     }
+
+    @Test
+    public void testReadAllFlightsByOrigin() {
+        FlightDao flightDao = new FlightDaoImpl();
+        flightDao.createFlight(Flight.builder().withFlightNo("1111").withOrigin("Stockholm").withDestination("Paris")
+                .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("16:00")
+                .withArrivalTime("20:00").withDate("20-11-2019").build());
+        flightDao.createFlight(Flight.builder().withFlightNo("1234").withOrigin("Stockholm").withDestination("Berlin")
+                .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("18:00")
+                .withArrivalTime("20:00").withDate("20-11-2019").build());
+        flightDao.createFlight(Flight.builder().withFlightNo("3333").withOrigin("Helsink").withDestination("Stockholm")
+                .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("13:00")
+                .withArrivalTime("12:00").withDate("15-09-2019").build());
+        Assert.assertEquals(2, flightDao.readAllFlightsByOrigin("stockholm").size());
+
+    }
+
 }

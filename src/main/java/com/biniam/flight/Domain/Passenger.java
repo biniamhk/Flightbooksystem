@@ -25,6 +25,15 @@ public class Passenger {
         return email;
     }
 
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "PassengerName='" + PassengerName + '\'' +
+                ", passengerId='" + passengerId + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
     public static Builder builder() {
         return new Builder();
     }
@@ -48,6 +57,7 @@ public class Passenger {
             this.email = email;
             return this;
         }
+
 
         public Passenger build() {
             return new Passenger(this);

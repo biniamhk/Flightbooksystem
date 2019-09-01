@@ -34,9 +34,37 @@ public class FlightDaoImpl implements FlightDao {
                 .stream()
                 .filter(flightDate -> flightDate.getDate().equalsIgnoreCase(date)).collect(Collectors.toSet());
     }
+    @Override
+    public Collection<Flight> readAllFlightsByOrigin(String origin) {
+        return flights.values()
+                .stream()
+                .filter(flightOrigin -> flightOrigin.getOrigin().equalsIgnoreCase(origin)).collect(Collectors.toSet());
+    }
+    @Override
+    public Collection<Flight> readAllFlightsByDestination(String destination) {
+        return flights.values()
+                .stream()
+                .filter(flightDate -> flightDate.getDate().equalsIgnoreCase(destination)).collect(Collectors.toSet());
+    }
 
     public Collection<Flight> readAllFlights(){
         return flights.values();
     }
+
+    public Flight searchByDate(String date){
+
+        return flights.get(date);
+    }
+
+    public Flight searchByOrigin(String origin){
+
+        return flights.get(origin);
+    }
+
+    public Flight searchByDestination(String destination){
+
+        return flights.get(destination);
+    }
+
 
 }

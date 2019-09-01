@@ -1,18 +1,22 @@
 package com.biniam.flight.Dao;
 
 
-import com.biniam.flight.Domain.Flight;
 import com.biniam.flight.Domain.Passenger;
 
+import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 
 public interface PassengerDao {
 
+    void createPassenger(Passenger passenger);
 
-    List<Flight> searchFlightByOriginAndDestination();
+    Optional<Passenger> read(String passengerId);
 
-    void bookFlight(Passenger passenger, Flight flight);
-
-    void cancelBook(Flight flight);
-    //List<Flight> listUnBookedFlight(User user)
+    Collection<Passenger> readAllPassengers();
 }
+
+
+
+
+

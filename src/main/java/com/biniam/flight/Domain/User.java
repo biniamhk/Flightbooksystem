@@ -28,6 +28,15 @@ public class User {
         return userId;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", userId='" + userId + '\'' +
+                '}';
+    }
+
     public static Builder builder() {
         return new Builder();
     }

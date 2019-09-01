@@ -1,8 +1,9 @@
 package com.biniam.flight.Domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Flight {
+public class Flight implements Serializable {
     private String flightNo;
     private String origin;
     private String destination;
