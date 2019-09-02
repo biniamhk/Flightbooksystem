@@ -10,4 +10,7 @@ public interface BookDao {
     void booking(Book book);
     Optional<Book> readBookByBookId(int bookId);
     Collection<Book> readAllBooksByDate(String date);
+    void cancelBookById(Integer bookId);
+    void cancelAllBooks();
+    Collection<Book> readAllBooks();
 }

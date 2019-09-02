@@ -3,7 +3,8 @@ com/biniam/flight/daoTest/FlightDaoUnitTest.class
 com/biniam/flight/daoTest/BookDaoUnitTest.class
 com/biniam/flight/daoTest/AirplaneDaoUnitTest.class
 com/biniam/flight/domainTest/AirplaneDomainTestBuilder.class
-com/biniam/flight/serviceTest/ServiceUnitTest.class
+com/biniam/flight/serviceTest/FlightServiceUnitTest.class
 com/biniam/flight/daoTest/EconomyClassFoodUnitTest.class
 com/biniam/flight/daoTest/UserDaoUnitTest.class
 com/biniam/flight/daoTest/PassengerDaoUnitTest.class
+com/biniam/flight/serviceTest/AirplaneServiceUnitTest.class

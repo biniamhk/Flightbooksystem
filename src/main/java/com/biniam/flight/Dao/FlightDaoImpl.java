@@ -44,7 +44,7 @@ public class FlightDaoImpl implements FlightDao {
     public Collection<Flight> readAllFlightsByDestination(String destination) {
         return flights.values()
                 .stream()
-                .filter(flightDate -> flightDate.getDate().equalsIgnoreCase(destination)).collect(Collectors.toSet());
+                .filter(flightDate -> flightDate.getDestination().equalsIgnoreCase(destination)).collect(Collectors.toSet());
     }
 
     public Collection<Flight> readAllFlights(){
@@ -54,6 +54,13 @@ public class FlightDaoImpl implements FlightDao {
     public Flight searchByDate(String date){
 
         return flights.get(date);
+    }
+    public void cancelFlight(String flightNo){
+        flights.remove(flightNo);
+    }
+    public void cancelAllFlights(){
+        flights.clear();
+
     }
 
     public Flight searchByOrigin(String origin){

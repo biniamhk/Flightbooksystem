@@ -7,7 +7,7 @@ public class Passenger {
     private String passengerId;
     private String email;
 
-    public Passenger(Builder builder) {
+    private Passenger(Builder builder) {
         this.PassengerName = Objects.requireNonNull(builder.PassengerName, "passengerName");
         this.passengerId = Objects.requireNonNull(builder.passengerId, "passengerId");
         this.email = builder.email;

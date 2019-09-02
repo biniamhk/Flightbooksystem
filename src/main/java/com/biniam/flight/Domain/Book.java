@@ -10,6 +10,7 @@ public class Book {
     private Passenger passenger;
     private BusinessClassFood businessClassFood;
     private EconomyClassFood economyClassFood;
+    private Seat seat;
     private Book(){
     }
 
@@ -19,6 +20,7 @@ public class Book {
         this.passenger=Objects.requireNonNull(builder.passenger,"User");
         this.businessClassFood=builder.businessClassFood;
         this.economyClassFood=builder.economyClassFood;
+        this.seat=builder.seat;
     }
 
     public Integer getBookId() {
@@ -61,6 +63,7 @@ public class Book {
         private Passenger passenger;
         private BusinessClassFood businessClassFood;
         private EconomyClassFood economyClassFood;
+        private Seat seat;
 
         public Builder withBookId(Integer bookId){
             this.bookId=bookId;
@@ -84,31 +87,12 @@ public class Book {
             this.businessClassFood=businessClassFood;
             return this;
         }
+        public Builder withSeat(Seat seat){
+            this.seat=seat;
+            return this;
+        }
         public Book build(){
             return new Book(this);
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

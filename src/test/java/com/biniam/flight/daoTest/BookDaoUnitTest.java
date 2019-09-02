@@ -23,7 +23,7 @@ public class BookDaoUnitTest {
     }
 
     @Test
-    public void testReadingBookedByDate() {
+    public void testReadingBookedByDateAndCancellingBooks() {
         BookDao bookDao = new BookDaoImpl();
         bookDao.booking(Book.builder().withBookId(002).withFlight(Flight.builder().withFlightNo("1111").withOrigin("Stockholm")
                 .withDestination("Paris").withBusinessClassPrice(10000f).withEconomyClassPrice(5000f).withDepartureTime("16:00")
@@ -38,5 +38,8 @@ public class BookDaoUnitTest {
                 .withBusinessClassFood(BusinessClassFood.builder().withFoodName("lazana").withFoodQty("1")
                         .withDrink("beer").withFoodPrice(160f).build()).build());
         Assert.assertEquals(1, bookDao.readAllBooksByDate("11-12-2019").size());
+        //Testing if we can cancel the values
+        bookDao.cancelBookById(002);
+        Assert.assertEquals(1,bookDao.readAllBooks().size());
     }
 }

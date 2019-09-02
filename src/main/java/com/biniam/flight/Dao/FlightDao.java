@@ -18,5 +18,8 @@ public interface FlightDao {
     Flight  searchByDate(String date);
     Flight searchByOrigin(String origin);
     Flight searchByDestination(String destination);
+     void cancelFlight(String flightNo);
+    void cancelAllFlights();
+
 
 }

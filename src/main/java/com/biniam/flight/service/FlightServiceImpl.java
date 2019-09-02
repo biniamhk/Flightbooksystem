@@ -5,12 +5,13 @@ import com.biniam.flight.Domain.Flight;
 import com.biniam.flight.Domain.FlightClass;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class FlightServiceImpl implements FlightService {
-    private FlightDao flightDao;
+    private final FlightDao flightDao;
 
     public FlightServiceImpl(FlightDao flightDao) {
         this.flightDao = Objects.requireNonNull(flightDao, "flightDao must be not null");
@@ -22,6 +23,15 @@ public class FlightServiceImpl implements FlightService {
     }
 
     @Override
+    public String getFlightByNumber(String flightNumber) {
+        Optional<Flight> flight = flightDao.read(flightNumber);
+        if(flight.isPresent()){
+            return flight.get().getFlightNo();
+        }
+        return null;
+    }
+
+    @Override
     public Collection<Flight> getAllFlight() {
 
         return flightDao.readAllFlights();
@@ -29,15 +39,21 @@ public class FlightServiceImpl implements FlightService {
 
     @Override
     public Collection<Flight> getFlightByDate(String date) {
-        return flightDao.readAllFlightsByDate("20-12-2019");
+        return flightDao.readAllFlightsByDate(date);
     }
 
-    public Collection<Flight> getFlightByOrigin(String origin) {
-        return flightDao.readAllFlightsByDate("20-12-2019");
+    public Collection<Flight> getFlightByOrigin(String origin)
+    {
+        return flightDao.readAllFlightsByOrigin(origin);
     }
 
     public Collection<Flight> getFlightByDestination(String destination) {
-        return flightDao.readAllFlightsByDate("20-12-2019");
+        return flightDao.readAllFlightsByDestination(destination);
+    }
+
+    public void cancelFlight(String flightNo){
+        flightDao.cancelFlight(flightNo);
+
     }
 }
 

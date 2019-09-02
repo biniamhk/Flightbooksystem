@@ -8,9 +8,10 @@ import java.util.List;
 
 public interface FlightService {
     void createFlight(Flight flight);
+    String getFlightByNumber(String flightNumber);
     Collection<Flight> getAllFlight();
     Collection<Flight> getFlightByDate(String date);
     Collection<Flight> getFlightByOrigin(String origin);
     Collection<Flight> getFlightByDestination(String destination);
-
+    void cancelFlight(String flightNo);
 }

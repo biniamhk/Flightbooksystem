@@ -21,6 +21,7 @@ com/biniam/flight/Dao/UserDao.class
 com/biniam/flight/service/FlightService.class
 com/biniam/flight/Domain/Flight$1.class
 com/biniam/flight/Domain/EconomyClassFood$Builder.class
+com/biniam/flight/service/AirPlaneServiceImpl.class
 com/biniam/flight/Domain/Book.class
 com/biniam/flight/Domain/Book$Builder.class
 com/biniam/flight/Domain/Flight.class
@@ -38,4 +39,5 @@ com/biniam/flight/Dao/PassengerDao.class
 com/biniam/flight/Dao/AirplaneDao.class
 com/biniam/flight/Dao/FlightDaoImpl.class
 com/biniam/flight/Domain/BusinessClassFood$1.class
+com/biniam/flight/service/AirplaneService.class
 com/biniam/flight/Dao/FlightDao.class

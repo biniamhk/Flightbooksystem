@@ -10,13 +10,14 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class BookDaoImpl implements BookDao {
-    Map<Integer,Book> books=new HashMap<>();
+    Map<Integer, Book> books = new HashMap<>();
+
     @Override
     public void booking(Book book) {
-        if(books.containsKey(book.getBookId())){
+        if (books.containsKey(book.getBookId())) {
             throw new RuntimeException("this book already exist");
         }
-        books.put(book.getBookId(),book);
+        books.put(book.getBookId(), book);
 
     }
 
@@ -28,5 +29,17 @@ public class BookDaoImpl implements BookDao {
     @Override
     public Collection<Book> readAllBooksByDate(String date) {
         return books.values().stream().filter(book -> book.getFlight().getDate().equalsIgnoreCase(date)).collect(Collectors.toList());
+    }
+    public Collection<Book> readAllBooks(){
+        return books.values();
+    }
+
+    public void cancelBookById(Integer bookId ) {
+        books.remove(bookId);
+
+    }
+   public void cancelAllBooks(){
+        books.clear();
+
     }
 }
