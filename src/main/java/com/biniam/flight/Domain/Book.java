@@ -1,7 +1,5 @@
 package com.biniam.flight.Domain;
 
-import com.biniam.flight.exceptionHandler.ExceptionHandler;
-
 import java.util.Objects;
 
 public class Book {

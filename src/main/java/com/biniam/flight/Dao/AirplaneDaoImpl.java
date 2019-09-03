@@ -1,7 +1,6 @@
 package com.biniam.flight.Dao;
 
 import com.biniam.flight.Domain.Airplane;
-import com.biniam.flight.exceptionHandler.ExceptionHandler;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -13,7 +12,7 @@ public class AirplaneDaoImpl implements AirplaneDao {
     Map<String, Airplane> airplanes = new HashMap<>();
 
     @Override
-    public void createPlane(Airplane airplane)  throws ExceptionHandler {
+    public void createPlane(Airplane airplane)  {
         if (airplanes.containsKey(airplane.getPlaneNo())) {
             throw new RuntimeException("Plane already exist");
         }
