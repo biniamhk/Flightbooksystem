@@ -6,7 +6,7 @@ import com.biniam.flight.Domain.EconomyClassFood;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class EconomyClassFoodUnitTest {
+public class EconomyClassFoodIntegrationTest {
     @Test
     public void testCreatingEconomyFood() {
         EconomyClassFoodDao economyClassFoodDao = new EconomyClassFoodDaoImpl();

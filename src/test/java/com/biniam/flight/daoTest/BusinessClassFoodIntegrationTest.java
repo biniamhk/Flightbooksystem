@@ -6,7 +6,7 @@ import com.biniam.flight.Domain.BusinessClassFood;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class BusinessClassFoodUnitTest {
+public class BusinessClassFoodIntegrationTest {
 
     @Test
     public void testCreatingBusinessFood() {

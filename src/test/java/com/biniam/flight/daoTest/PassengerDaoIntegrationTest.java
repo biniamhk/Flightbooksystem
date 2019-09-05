@@ -6,7 +6,7 @@ import com.biniam.flight.Domain.Passenger;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PassengerDaoUnitTest {
+public class PassengerDaoIntegrationTest {
     @Test
     public void testCreatingPassenger() {
         PassengerDao passengerDao = new PassengerDaoImpl();

@@ -6,7 +6,7 @@ import com.biniam.flight.Domain.Airplane;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AirplaneDaoUnitTest {
+public class AirplaneDaoIntegrationTest {
 
     @Test
     public void testCreateAirplane() {

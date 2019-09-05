@@ -9,7 +9,7 @@ import org.junit.Test;
 import java.util.Collection;
 
 
-public class UserDaoUnitTest {
+public class UserDaoIntegrationTest {
 
     @Test
     public void testCreatingUser() {

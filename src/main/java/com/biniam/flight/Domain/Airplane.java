@@ -29,6 +29,15 @@ public class Airplane implements Serializable {
         return numberOfSeats;
     }
 
+    @Override
+    public String toString() {
+        return "Airplane{" +
+                "planeNo='" + planeNo + '\'' +
+                ", model='" + model + '\'' +
+                ", numberOfSeats=" + numberOfSeats +
+                '}';
+    }
+
     public static Builder builder() {
         return new Builder();
     }

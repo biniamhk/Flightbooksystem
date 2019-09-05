@@ -7,7 +7,7 @@ import com.biniam.flight.Domain.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class BookDaoUnitTest {
+public class BookDaoIntegrationTest {
     @Test
     public void testCreatingBook() {
         BookDao bookDao = new BookDaoImpl();

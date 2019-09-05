@@ -11,12 +11,12 @@ import java.util.stream.Collectors;
 
 public class FlightDaoImpl implements FlightDao {
 
-    Map<String, Flight> flights = new HashMap<>();
+  private  Map<String, Flight> flights = new HashMap<>();
 
     @Override
     public void createFlight(Flight flight) {
         if (flights.containsKey(flight.getFlightNo())) {
-            throw new RuntimeException("Plane already exist");
+            throw new RuntimeException("flight already exist");
         }
         flights.put(flight.getFlightNo(), flight);
 

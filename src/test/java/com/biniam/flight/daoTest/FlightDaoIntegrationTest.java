@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import java.util.Collection;
 
-public class FlightDaoUnitTest {
+public class FlightDaoIntegrationTest {
 
     @Test
     public void testCreateFlight() {
@@ -55,9 +55,10 @@ public class FlightDaoUnitTest {
         //now I am going to cancel flight  and test if it works
         flightDao.cancelFlight("3333");
         Assert.assertEquals(2,flightDao.readAllFlights().size());
+        System.out.println(flightDao.readAllFlights());
         //cancelling all flights
-        flightDao.cancelAllFlights();
-        Assert.assertEquals(0,flightDao.readAllFlights().size());
+//        flightDao.cancelAllFlights();
+//        Assert.assertEquals(0,flightDao.readAllFlights().size());
 
 
     }

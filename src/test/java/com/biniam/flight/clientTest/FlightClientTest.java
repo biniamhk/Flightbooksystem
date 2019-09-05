@@ -23,6 +23,7 @@ public class FlightClientTest {
     FlightAdmin flightAdmin=new FlightAdminImpl(flightService);
     flightAdmin.createFlight(flight);
         Assert.assertEquals(1,flightAdmin.readFlights(flight).size());
+        System.out.println(flightAdmin.readFlights(flight).toString());
 
     }
 }
