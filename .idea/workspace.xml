@@ -3,49 +3,90 @@
   <component name="ChangeListManager">
     <list default="true" id="ec19d0ef-4b0c-491d-8030-f3758fcda95f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/FlightDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/FlightDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/AirplaneDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Dao/AirplaneDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/clientTest/FlightClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/clientTest/FlightClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/AirplaneDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/AirplaneDaoIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BookDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BookDaoIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BusinessClassFoodUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BusinessClassFoodIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/EconomyClassFoodUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/EconomyClassFoodIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/PassengerDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/PassengerDaoIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/UserDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/UserDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/BusinessClassFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/BusinessClassFood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/EconomyClassFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/EconomyClassFood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biniam/flight/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AirplaneDaoTier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DaoTier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AirplaneServiceTier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ServiceTier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FlightClientTier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ClientTier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FlightDaoTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FlightServiceTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/AirplaneDaoIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/AirplaneDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BookDaoIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BookDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BusinessClassFoodIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/BusinessClassFoodIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/EconomyClassFoodIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/EconomyClassFoodIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/FlightDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/PassengerDaoIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/PassengerDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/UserDaoIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/daoTest/UserDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/domainTest/AirplaneDomainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/domainTest/AirplaneDomainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/serviceTest/AirplaneServiceUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/serviceTest/AirplaneServiceUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/serviceTest/BookServiceUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/serviceTest/BookServiceUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/biniam/flight/serviceTest/FlightServiceUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/biniam/flight/serviceTest/FlightServiceUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/FlightDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ServiceTestTier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FlightManager-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/FlightManager-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/FlightDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/FlightDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirplaneDaoTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirplaneServiceTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlightClientTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlightDaoTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlightServiceTier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FlightManager.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainSpring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/AirplaneDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Dao/AirplaneDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Airplane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/BusinessClassFood.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/BusinessClassFood.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/EconomyClassFood.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/EconomyClassFood.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/Seat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biniam/flight/Domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.BookDaoUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.BookDaoUnitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.BusinessClassFoodUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.BusinessClassFoodUnitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.FlightDaoUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.FlightDaoUnitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.UserDaoUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.UserDaoUnitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.clientTest.FlightClientTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.clientTest.FlightClientTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.AirplaneDaoUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.BookDaoUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.BusinessClassFoodUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.EconomyClassFoodUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.FlightDaoUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.PassengerDaoUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.daoTest.UserDaoUnitTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.serviceTest.AirplaneServiceUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.serviceTest.AirplaneServiceUnitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.serviceTest.BookServiceUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.serviceTest.BookServiceUnitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.serviceTest.FlightServiceUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.biniam.flight.serviceTest.FlightServiceUnitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.clientTest.FlightClientTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.clientTest.FlightClientTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.AirplaneDaoUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.AirplaneDaoUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.BookDaoUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.BookDaoUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.BusinessClassFoodUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.BusinessClassFoodUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.EconomyClassFoodUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.EconomyClassFoodUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.FlightDaoUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.FlightDaoUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.PassengerDaoUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.PassengerDaoUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.UserDaoUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.UserDaoUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.domainTest.AirplaneDomainTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.domainTest.AirplaneDomainTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.AirplaneDaoUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.BookDaoUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.BusinessClassFoodUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.EconomyClassFoodUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.FlightDaoUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.PassengerDaoUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.daoTest.UserDaoUnitTest.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.domainTest.FlightDomainTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.domainTest.FlightDomainTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.serviceTest.AirplaneServiceUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.serviceTest.AirplaneServiceUnitTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.serviceTest.BookServiceUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.serviceTest.BookServiceUnitTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.serviceTest.FlightServiceUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.biniam.flight.serviceTest.FlightServiceUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/clientTest/FlightClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/clientTest/FlightClientTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/AirplaneDaoUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/BookDaoUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/BusinessClassFoodUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/EconomyClassFoodUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/FlightDaoUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/PassengerDaoUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/UserDaoUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FlightDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/FlightManager.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/AirplaneDaoIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/AirplaneDaoIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/BookDaoIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/BookDaoIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/BusinessClassFoodIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/BusinessClassFoodIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/EconomyClassFoodIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/EconomyClassFoodIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/FlightDaoIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/FlightDaoIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/PassengerDaoIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/PassengerDaoIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/UserDaoIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/daoTest/UserDaoIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/domainTest/AirplaneDomainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/domainTest/AirplaneDomainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/serviceTest/AirplaneServiceUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/serviceTest/AirplaneServiceUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/serviceTest/BookServiceUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/serviceTest/BookServiceUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/serviceTest/FlightServiceUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/biniam/flight/serviceTest/FlightServiceUnitTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,26 +142,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainSpring">
-    <configuration name="MainSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainSpring" />
+  <component name="RunManager" selected="JUnit.BookDaoIntegrationTest.testCreatingBook">
+    <configuration name="AirplaneServiceUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.biniam.flight.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.biniam.flight.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.serviceTest.AirplaneServiceUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightClientTest.testingCreateFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookDaoIntegrationTest.testCreatingBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.biniam.flight.clientTest.*" />
+          <option name="PATTERN" value="com.biniam.flight.daoTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.biniam.flight.clientTest" />
-      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.clientTest.FlightClientTest" />
-      <option name="METHOD_NAME" value="testingCreateFlight" />
+      <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.BookDaoIntegrationTest" />
+      <option name="METHOD_NAME" value="testCreatingBook" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightDaoIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.biniam.flight.daoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.FlightDaoIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,23 +205,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightDaoIntegrationTest.testReadAllFlightsByOriginAndCancellingFlights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FlightManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.biniam.flight.daoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.biniam.flight.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="com.biniam.flight.daoTest.FlightDaoIntegrationTest" />
-      <option name="METHOD_NAME" value="testReadAllFlightsByOriginAndCancellingFlights" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlightServiceUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightServiceUnitTest.testCanclingFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
@@ -167,18 +215,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.biniam.flight.serviceTest" />
       <option name="MAIN_CLASS_NAME" value="com.biniam.flight.serviceTest.FlightServiceUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testCanclingFlight" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainSpring" />
-        <item itemvalue="JUnit.FlightServiceUnitTest" />
+        <item itemvalue="JUnit.BookDaoIntegrationTest.testCreatingBook" />
+        <item itemvalue="JUnit.FlightDaoIntegrationTest" />
+        <item itemvalue="JUnit.AirplaneServiceUnitTest" />
         <item itemvalue="JUnit.FlightDaoIntegrationTest.testCreateFlight" />
-        <item itemvalue="JUnit.FlightDaoIntegrationTest.testReadAllFlightsByOriginAndCancellingFlights" />
-        <item itemvalue="JUnit.FlightClientTest.testingCreateFlight" />
+        <item itemvalue="JUnit.FlightServiceUnitTest.testCanclingFlight" />
       </list>
     </recent_temporary>
   </component>

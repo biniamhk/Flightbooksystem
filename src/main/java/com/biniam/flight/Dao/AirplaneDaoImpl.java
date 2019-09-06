@@ -9,7 +9,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AirplaneDaoImpl implements AirplaneDao {
-    Map<String, Airplane> airplanes = new HashMap<>();
+   private Map<String, Airplane> airplanes = new HashMap<>();
 
     @Override
     public void createPlane(Airplane airplane)  {
@@ -34,8 +34,7 @@ public class AirplaneDaoImpl implements AirplaneDao {
     }
 
     @Override
-    public Collection<Airplane> readAllAirplane() {
-        return airplanes.values();
+    public Collection<Airplane> readAllAirplane() {return airplanes.values();
     }
 
 }

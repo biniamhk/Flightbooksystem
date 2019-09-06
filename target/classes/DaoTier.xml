@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="airplaneDao" class="com.biniam.flight.Dao.AirplaneDaoImpl"/>
+
+    <bean id="flightDao" class="com.biniam.flight.Dao.FlightDaoImpl"/>
+
+    <bean id="bookDao" class="com.biniam.flight.Dao.BookDaoImpl"/>
+
+    <bean id="businessfood" class="com.biniam.flight.Dao.BusinessClassFoodDaoImpl"/>
+
+    <bean id="economyfood" class="com.biniam.flight.Dao.EconomyClassFoodDaoImpl"/>
+
+    <bean id="passengerDao" class="com.biniam.flight.Dao.PassengerDaoImpl"/>
+
+    <bean id="userDao" class="com.biniam.flight.Dao.UserDaoImpl"/>
+
+
+</beans>

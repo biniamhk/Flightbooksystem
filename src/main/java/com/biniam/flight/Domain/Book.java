@@ -49,7 +49,7 @@ public class Book {
                 ", passenger=" + passenger +
                 ", businessClassFood=" + businessClassFood +
                 ", economyClassFood=" + economyClassFood +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builder(){

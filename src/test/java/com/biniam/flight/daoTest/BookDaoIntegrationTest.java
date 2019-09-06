@@ -6,11 +6,15 @@ import com.biniam.flight.Dao.FlightDao;
 import com.biniam.flight.Domain.*;
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class BookDaoIntegrationTest {
+    GenericXmlApplicationContext applicationContext = new GenericXmlApplicationContext("DaoTier.xml");
+    private BookDao bookDao = applicationContext.getBean(BookDao.class);
+
     @Test
     public void testCreatingBook() {
-        BookDao bookDao = new BookDaoImpl();
+
         Book book1 = (Book.builder().withBookId(001).withFlight(Flight.builder().withFlightNo("1111").withOrigin("Stockholm")
                 .withDestination("Paris").withBusinessClassPrice(10000f).withEconomyClassPrice(5000f).withDepartureTime("16:00")
                 .withArrivalTime("20:00").withDate("20-11-2019").build())
@@ -24,7 +28,7 @@ public class BookDaoIntegrationTest {
 
     @Test
     public void testReadingBookedByDateAndCancellingBooks() {
-        BookDao bookDao = new BookDaoImpl();
+
         bookDao.booking(Book.builder().withBookId(002).withFlight(Flight.builder().withFlightNo("1111").withOrigin("Stockholm")
                 .withDestination("Paris").withBusinessClassPrice(10000f).withEconomyClassPrice(5000f).withDepartureTime("16:00")
                 .withArrivalTime("20:00").withDate("20-11-2019").build())
@@ -40,6 +44,6 @@ public class BookDaoIntegrationTest {
         Assert.assertEquals(1, bookDao.readAllBooksByDate("11-12-2019").size());
         //Testing if we can cancel the values
         bookDao.cancelBookById(002);
-        Assert.assertEquals(1,bookDao.readAllBooks().size());
+        Assert.assertEquals(1, bookDao.readAllBooks().size());
     }
 }

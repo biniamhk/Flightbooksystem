@@ -39,6 +39,7 @@ com/biniam/flight/Dao/AirplaneDaoImpl.class
 com/biniam/flight/Dao/SeatDao.class
 com/biniam/flight/Domain/Airplane.class
 com/biniam/flight/Domain/Book.class
+MainSpring.class
 com/biniam/flight/Domain/Seat$1.class
 com/biniam/flight/service/FlightServiceImpl.class
 com/biniam/flight/Domain/Passenger$1.class

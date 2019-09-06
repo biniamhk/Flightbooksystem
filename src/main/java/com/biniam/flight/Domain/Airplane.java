@@ -35,7 +35,7 @@ public class Airplane implements Serializable {
                 "planeNo='" + planeNo + '\'' +
                 ", model='" + model + '\'' +
                 ", numberOfSeats=" + numberOfSeats +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builder() {

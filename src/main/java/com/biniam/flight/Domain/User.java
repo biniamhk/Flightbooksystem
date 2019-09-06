@@ -34,7 +34,7 @@ public class User {
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", userId='" + userId + '\'' +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builder() {

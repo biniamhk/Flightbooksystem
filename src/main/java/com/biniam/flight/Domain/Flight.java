@@ -77,7 +77,7 @@ public class Flight implements Serializable {
                 ", departureTime='" + departureTime + '\'' +
                 ", arrivalTime='" + arrivalTime + '\'' +
                 ", date='" + date + '\'' +
-                '}';
+                ']'+'\n';
     }
 
     public static Builder builder() {

@@ -43,7 +43,7 @@ public class EconomyClassFood implements Serializable {
                 ", foodQty='" + foodQty + '\'' +
                 ", drink='" + drink + '\'' +
                 ", foodPrice=" + foodPrice +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builder() {

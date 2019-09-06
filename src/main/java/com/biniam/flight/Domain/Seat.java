@@ -28,7 +28,7 @@ private Seat(){
         return "Seat{" +
                 "businessClassSeat=" + businessClassSeat +
                 ", economyClassSeats=" + economyClassSeats +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builde() {

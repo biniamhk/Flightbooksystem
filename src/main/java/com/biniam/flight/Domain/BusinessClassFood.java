@@ -43,7 +43,7 @@ public class BusinessClassFood implements Serializable {
                 ", foodQty='" + foodQty + '\'' +
                 ", foodPrice=" + foodPrice +
                 ", drink='" + drink + '\'' +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builder() {

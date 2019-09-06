@@ -6,17 +6,15 @@ import com.biniam.flight.service.AirplaneService;
 import com.biniam.flight.service.FlightService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import javax.swing.text.html.Option;
 import java.util.Collection;
 import java.util.Optional;
 
 public class MainSpring {
     public static void main(String[] args) {
 
-        GenericXmlApplicationContext applicationContext = new GenericXmlApplicationContext("FlightDaoTier.xml","AirplaneDaoTier.xml",
-                "AirplaneServiceTier.xml",
-                "FlightServiceTier.xml"
-        );
+        GenericXmlApplicationContext applicationContext =
+                new GenericXmlApplicationContext("DaoTier.xml",
+                        "ServiceTier.xml" );
 
         FlightDao flightDao = applicationContext.getBean(FlightDao.class);
         Optional<Flight> optional = flightDao.read("223");

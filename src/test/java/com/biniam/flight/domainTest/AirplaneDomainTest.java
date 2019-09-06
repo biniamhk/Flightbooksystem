@@ -18,10 +18,10 @@ public class AirplaneDomainTest {
         Airplane airplane = Airplane.builder().withPlaneNo("1111").withModel("boeing737").withNumberOfSeats(10).build();
         Assert.assertEquals("1111", airplane.getPlaneNo());
     }
-    public void testclient(){
 
 
-    }
+
+
 }
 
 

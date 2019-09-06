@@ -7,13 +7,16 @@ import com.biniam.flight.service.FlightService;
 import com.biniam.flight.service.FlightServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.support.GenericXmlApplicationContext;
 
 import java.util.Collection;
 
 public class FlightServiceUnitTest {
+    GenericXmlApplicationContext applicationContext =
+            new GenericXmlApplicationContext("DaoTier.xml");
+    private  FlightDao flightDao=applicationContext.getBean(FlightDao.class);
     @Test
     public void testCreatingAndReadingFlight(){
-        FlightDao flightDao=new FlightDaoImpl();
         flightDao.createFlight((Flight.builder().withFlightNo("0013").withOrigin("Stockholm").withDestination("paris")
                 .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("19:30").withArrivalTime("22:30")
                 .withDate("22-12-2019").build()));
@@ -26,7 +29,6 @@ public class FlightServiceUnitTest {
     }
     @Test
     public void testCanclingFlight(){
-        FlightDao flightDao=new FlightDaoImpl();
         flightDao.createFlight((Flight.builder().withFlightNo("0013").withOrigin("Stockholm").withDestination("paris")
                 .withBusinessClassPrice(20000f).withEconomyClassPrice(5000f).withDepartureTime("19:30").withArrivalTime("22:30")
                 .withDate("22-12-2019").build()));

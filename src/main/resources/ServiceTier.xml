@@ -9,4 +9,8 @@
         <constructor-arg name="airplaneDao" ref="airplaneDao"/>
     </bean>
 
+    <bean id = "flightService" class = "com.biniam.flight.service.FlightServiceImpl">
+        <constructor-arg name="flightDao" ref="flightDao"/>
+    </bean>
+
 </beans>

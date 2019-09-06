@@ -31,7 +31,7 @@ public class Passenger {
                 "PassengerName='" + PassengerName + '\'' +
                 ", passengerId='" + passengerId + '\'' +
                 ", email='" + email + '\'' +
-                '}';
+                '}'+'\n';
     }
 
     public static Builder builder() {
