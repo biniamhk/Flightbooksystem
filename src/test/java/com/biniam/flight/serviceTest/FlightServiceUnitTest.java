@@ -15,6 +15,7 @@ public class FlightServiceUnitTest {
     GenericXmlApplicationContext applicationContext =
             new GenericXmlApplicationContext("DaoTier.xml");
     private  FlightDao flightDao=applicationContext.getBean(FlightDao.class);
+
     @Test
     public void testCreatingAndReadingFlight(){
         flightDao.createFlight((Flight.builder().withFlightNo("0013").withOrigin("Stockholm").withDestination("paris")

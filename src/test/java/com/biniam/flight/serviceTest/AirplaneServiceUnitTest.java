@@ -9,11 +9,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+import java.util.Collection;
+import java.util.stream.Collectors;
+
 public class AirplaneServiceUnitTest {
    private  GenericXmlApplicationContext applicationContext=
-           new GenericXmlApplicationContext("DaoTier.xml","ServiceTier.xml");
+           new GenericXmlApplicationContext("DaoTier.xml");
    private  AirplaneDao airplaneDao=applicationContext.getBean(AirplaneDao.class);
-  private   AirplaneService airplaneService=applicationContext.getBean(AirplaneService.class);
 
     @Test
     public void testCreatingAndReadingAirplane(){
@@ -21,14 +23,10 @@ public class AirplaneServiceUnitTest {
         Airplane airplane1=Airplane.builder().withPlaneNo("333").withModel("Airbus280").withNumberOfSeats(10).build();
         airplaneDao.createPlane(airplane);
         airplaneDao.createPlane(airplane1);
-
         AirplaneService airplaneService=new AirPlaneServiceImpl(airplaneDao);
         Assert.assertNotNull(airplaneService.getAirByNumber("222"));
-
-
-
-
-
+        Collection<Airplane> airplanes=airplaneService.readAllAirplane();
+        System.out.println(airplanes.stream().filter(s->s.getModel().equalsIgnoreCase("Airbus280")).collect(Collectors.toSet()));
 
     }
 }

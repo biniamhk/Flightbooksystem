@@ -2,6 +2,7 @@ package com.biniam.flight.service;
 
 import com.biniam.flight.Dao.AirplaneDao;
 import com.biniam.flight.Domain.Airplane;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.List;
@@ -36,7 +37,8 @@ public class AirPlaneServiceImpl implements AirplaneService {
                 .equalsIgnoreCase(planeModel)).collect(Collectors.toSet());
     }
 
-    public Collection<Airplane> readAllAirplane() {
+    public Collection<Airplane> readAllAirplane()
+    {
         return airplaneDao.readAllAirplane();
     }
 }
